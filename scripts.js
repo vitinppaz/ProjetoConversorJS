@@ -11,7 +11,7 @@ const convertValues = () => {
 
     realValueText.innerHTML = new Intl.NumberFormat("pt-BR",{ 
         style: "currency", 
-        currency: "BRL" 
+        currency: "BRL"
     }).format(inputReais)
 
     currencyValueText.innerHTML = new Intl.NumberFormat("en-US",{ 
@@ -22,10 +22,11 @@ const convertValues = () => {
 
 changeCurrency = () =>{
     const currencyName = document.getElementById("currency-name")
-    const currenyImg = document.getElementById("currency-img")
+    const currencyImg = document.getElementById("currency-img")
 
     if (select.value === '€ Euro') {
         currencyName.innerHTML = "Euro"
+        currencyImg.src = "./assets/euro.png"
     }
 }
 
